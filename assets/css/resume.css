@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: var(--color1); 
+    color: #333;
+    line-height: 1.6;
+    padding: 40px 0;
+}
+
+.resume-container {
+    max-width: 1450px;
+    margin: -10px auto;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: row;
+}
+
+.header {
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+}
+
+.name {
+    align-items: center;     
+    text-align: center;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #ecf0f1;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title:after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #8b88f1;
+}
+
+.summary {
+    padding: 40px;
+    margin-top: -40px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.summary p {
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.section-title {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2c3e50;
+    padding: 15px  40px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #8b88f1;
+    margin-top: 5px;
+    margin-right: -100px;
+    
+}
+
+/* Experience Section */
+.experience {
+    padding: 30px 40px;
+    margin-right: -100px;
+}
+
+.job {
+    margin-bottom: 35px;
+    padding-bottom: 25px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.job:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.company {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.position {
+    font-size: 18px;
+    color: #8b88f1;
+    font-weight: 500;
+    margin-left: 510px;
+}
+
+.job-content {
+    color: #555;
+    line-height: 1.7;
+}
+
+.job-content p {
+    margin-bottom: 12px;
+}
+
+/* References Section */
+.references {
+    padding: 30px 40px 50px;
+    background-color: #f8f9fa;
+}
+
+.references-title {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.references-content {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+}
+.left-panel {
+  width: 20%;
+  background: linear-gradient(90deg, #d488ff, #8b88f1);
+  color: white;
+  padding: 20px;
+  margin-top: 0px;
+  box-sizing: border-box;
+}
+
+.right-panel {
+  padding: 2rem 4rem;
+  width: 70%;
+  margin-top: 0px;
+  background-color: #fff;
+  padding: 30px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: 36px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 20px;
+  color: #7f8c8d;
+}
+
+.photo-container {
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.section-title-left {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.section-divider {
+  border: none;
+  height: 2px;
+  background: white;
+  width: 90%;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.contact-list li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.education-left p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
