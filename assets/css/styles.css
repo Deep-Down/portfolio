@@ -39,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 .menu a {

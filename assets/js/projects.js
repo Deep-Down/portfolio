@@ -6,13 +6,13 @@ const projects = [
         title: 'Portfolio Website'
     },
     {
-        img: 'assets/images/todo-app.png',
+        img: 'assets/images/pic1.jpg',
         alt: 'Todo App',
         link: 'https://github.com/yourusername/todo-app',
         title: 'Todo App'
     },
     {
-        img: 'assets/images/smart-scheduler.png',
+        img: 'assets/images/pic2.jpg',
         alt: 'Smart Scheduler',
         link: 'https://github.com/yourusername/smart-scheduler',
         title: 'Smart Scheduler'
