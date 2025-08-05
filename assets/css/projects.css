@@ -1,0 +1,78 @@
+/* Центрирование галереи внутри карточки */
+.project-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 320px;
+    margin: 0 auto;
+}
+
+/* Кнопки навигации */
+.gallery-nav {
+    background: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+.gallery-nav.left {
+    left: 0;
+}
+.gallery-nav.right {
+    right: 0;
+}
+
+/* Контейнер для изображения и текста */
+.gallery-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    margin: 0 60px;
+}
+
+/* Картинка проекта */
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+/* Затемнение снизу картинки */
+.gallery-link::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 40%;
+    border-radius: 0 0 18px 18px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    pointer-events: none;
+}
+
+/* Текст поверх картинки */
+.project-title {
+    position: absolute;
+    left: 0; right: 0; bottom: 18px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    z-index: 2;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    pointer-events: none;
+}
